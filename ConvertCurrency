@@ -1,0 +1,7 @@
+fun convertCurrency(amount: Double, exchangeRate: Double): Double {
+    if (amount < 0.0 || exchangeRate <= 0.0) {
+        throw IllegalArgumentException("Amount must be non-negative and exchange rate must be positive.")
+    }
+
+    return amount * exchangeRate
+}
