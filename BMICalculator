@@ -1,0 +1,8 @@
+fun calculateBMI(weight: Double, height: Double): Double {
+    if (weight <= 0.0 || height <= 0.0) {
+        throw IllegalArgumentException("Weight and height must be positive values.")
+    }
+
+    val bmi = weight / (height * height)
+    return bmi
+}
