@@ -1,0 +1,10 @@
+fun main() {
+    val n = 10 // Change this to your desired positive integer
+    var sum = 0
+
+    for (i in 2..n step 2) {
+        sum += i
+    }
+
+    println("The sum of even numbers from 1 to $n is: $sum")
+}
