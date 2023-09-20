@@ -1,8 +1,11 @@
-fun calculateBMI(weight: Double, height: Double): Double {
-    if (weight <= 0.0 || height <= 0.0) {
-        throw IllegalArgumentException("Weight and height must be positive values.")
-    }
+fun main() {
+    val amount = 100.0 // Change this to the desired amount
+    val exchangeRate = 1.2 // Change this to the desired exchange rate
 
-    val bmi = weight / (height * height)
-    return bmi
+    val convertedAmount = convertCurrency(amount, exchangeRate)
+    println("Converted Amount: $convertedAmount")
+}
+
+fun convertCurrency(amount: Double, exchangeRate: Double): Double {
+    return amount * exchangeRate
 }
